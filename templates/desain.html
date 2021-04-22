@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>Pendaftaran Lomba Karya Seni</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Pendaftaran Lomba Karya Seni</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  <br />
+
+  <div style="margin-left: 5%">
+    <div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal" style="width:500px;">
+        Tambah Data Peserta
+      </button>
+      <br /> <br />
+      <div>
+        <!-- Modal -->
+        <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content" style="width:800px;">
+              <!-- header form -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pendaftaran Peserta Lomba</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- bagian dalam form -->
+              <div class="modal-body">
+                <div style="margin-left: 5%">
+                  <form action="index.php" method="POST">
+                    <div class="form-row">
+                      <div class="form-group col-md-2">
+                        <label for="tnama">Nama Lengkap</label>
+                        <input type="text" class="form-control" name="tnama" style="width: 600px;" required />
+                      </div>
+                    </div>
+              
+                    <div class="form-row">
+                      <div class="form-group col-md-2">
+                        <label for="tttl">Tanggal Lahir</label>
+                        <input class="form-control" type="date" name="tttl" style="width: 600px;" required />
+                      </div>
+                    </div>
+              
+                    <div class="form-row">
+                      <div class="form-group col-md-2">
+                        <label for="talamat">Alamat</label>
+                        <textarea class="form-control" name="talamat" rows="3" style="width: 600px;" required></textarea>
+                      </div>
+                    </div>
+              
+                    <div class="form-row">
+                      <div class="form-group col-md-2">
+                        <label for="tasal_sekolah">Asal Sekolah</label>
+                        <input type="text" class="form-control" name="tasal_sekolah" style="width: 600px;" required />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group col-md-2">
+                        <label for="tmata_lomba">Mata Lomba<br/></label>
+                        <select name="tmata_lomba" style="width: 600px;" class="form-select" aria-label="Default select example">
+                          <option value="1">Melukis</option>
+                          <option value="2">Desain Poster</option>
+                          <option value="3">Videografi</option>
+                          <option value="3">Fotografi</option>
+                        </select>
+                      </div>
+                    </div>
+              </div>
+              <!-- button submit dan close -->
+              <div class="modal-footer">
+                <button type="close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" name="add" class="btn btn-primary">Daftar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+    
+    <!-- Tabel 1 - Peserta Lomba -->
+    <div style="display: inline-block; ">
+      <h3>Daftar Peserta Lomba</h3>
+      <!-- TABEL1 -->
+      <table align="left" border="1" style="text-align: center;">
+        <tr>
+          <td>No</td>
+          <td>Nama</td>
+          <td>Tanggal Lahir</td>
+          <td style="width: 40%;">Alamat</td>
+          <td>Asal Sekolah</td>
+          <td>Mata Lomba</td>
+          <td>Aksi</td>
+        </tr>
+        <tr>
+          data tabel
+        </tr>
+
+      </table>
+    </div>
+
+    
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
